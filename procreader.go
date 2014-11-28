@@ -128,9 +128,6 @@ type Status_t struct {
 	TracerPid                  uint64   // PID of process tracing this process (0 if not)
 	Uid                        Ids      // Real, effective, saved set, and  file system UIDs
 	Gid                        Ids      // Real, effective, saved set, and  file system GIDs
-	Effective_Gid              uint64   // Real, effective, saved set, and  file system GIDs
-	Saved_Gid                  uint64   // Real, effective, saved set, and  file system GIDs
-	FS_Gid                     uint64   // Real, effective, saved set, and  file system GIDs
 	FDSize                     uint64   // number of file descriptor slots currently allocated
 	Groups                     []uint64 // supplementary group list
 	VmPeak                     uint64   // peak virtual memory size
